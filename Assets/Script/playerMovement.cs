@@ -12,7 +12,7 @@ public class playerMovement : MonoBehaviour
 
     float horizontalMove = 0f;
     bool jump = false;
-    //bool crouch = false;
+
     PhotonView view;
     private void Start()
     {
