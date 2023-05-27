@@ -579,7 +579,7 @@ GameObject:
   - component: {fileID: 983750109}
   - component: {fileID: 983750108}
   m_Layer: 0
-  m_Name: SpawnRabbit
+  m_Name: SpawnPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -597,7 +597,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c3319ffdbf48946bda25853b6d17cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 7934704498804261567, guid: 4f053c5d823638341a3c129dcbc73c18, type: 3}
+  playerPrefab1: {fileID: 187211046248487760, guid: f4aa868af57e83e41bc1ade55f046905, type: 3}
+  playerPrefab2: {fileID: 7934704498804261567, guid: 4f053c5d823638341a3c129dcbc73c18, type: 3}
 --- !u!4 &983750109
 Transform:
   m_ObjectHideFlags: 0
@@ -606,7 +607,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983750107}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9, y: -0.22, z: 3.5592241}
+  m_LocalPosition: {x: -3.21, y: -0.36, z: 3.5592241}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
