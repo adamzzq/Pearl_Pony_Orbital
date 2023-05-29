@@ -144,9 +144,9 @@ public class CharacterController2D : MonoBehaviour
 		Vector3 HealthBarScale = HealthBar.transform.localScale;
 
 		theScale.x *= -1;
-		HealthBarScale.x *= -1;
+        transform.localScale = theScale;
 
-		transform.localScale = theScale;
+        HealthBarScale.x *= -1;
         HealthBar.transform.localScale = HealthBarScale;
 
     }

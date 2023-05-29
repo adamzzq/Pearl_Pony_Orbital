@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform Player;
+    private Transform Player;
 
     private Vector3 tempPos;
 
@@ -13,12 +13,18 @@ public class CameraFollow : MonoBehaviour
     
     void Start()
     {
-        //Player = GameObject.FindWithTag("Player").transform;
+        Player = GameObject.FindWithTag("Player").transform;
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
+        if (Player == null)
+        {
+            Start();
+            return;
+        }
+
         tempPos = transform.position;
         tempPos.x = Player.position.x;
         tempPos.y = Player.position.y;
