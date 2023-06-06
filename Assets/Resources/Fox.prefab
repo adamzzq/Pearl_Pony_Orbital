@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 1837152966879358273}
   - component: {fileID: 3046263509776084631}
   - component: {fileID: 245800214586031416}
+  - component: {fileID: 3745587366831507535}
   - component: {fileID: 2024595875535101673}
   - component: {fileID: 745260658713439325}
   - component: {fileID: -6929623814698282029}
@@ -207,7 +208,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 7
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -283,7 +284,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837152966879358272}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 462b02c468d95e84a95c2c022ae461df, type: 3}
   m_Name: 
@@ -324,7 +325,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837152966879358272}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ffffbe09bfc4f440bc587f5d5a6adc1, type: 3}
   m_Name: 
@@ -332,6 +333,24 @@ MonoBehaviour:
   controller: {fileID: 3046263509776084631}
   animator: {fileID: 1837152966879358273}
   runspeed: 40
+--- !u!114 &3745587366831507535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837152966879358272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1a24830cc095e4a8db13107d1da88b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 9
+  jumpForce: 22
+  maxDistance: 1.24
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &2024595875535101673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c678b72bae0a2a4aab39d0b89ac7d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1837152966879358273}
   attackPoint: {fileID: 4610824277440787786}
   enemyLayers:
     serializedVersion: 2
@@ -412,6 +431,12 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 2
     Name: IsJumping
+  - Type: 1
+    SynchronizeType: 2
+    Name: yVelocity
+  - Type: 9
+    SynchronizeType: 1
+    Name: Attack
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0
@@ -444,7 +469,7 @@ MonoBehaviour:
     InterpolateRotateTowardsSpeed: 180
     InterpolateLerpSpeed: 5
   m_ScaleModel:
-    SynchronizeEnabled: 0
+    SynchronizeEnabled: 1
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
@@ -793,7 +818,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -2002805543
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &3113547471015626769

@@ -21,6 +21,7 @@ public class PlayerCombat : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Attack();
+                //transform.Translate(-0.437f, 0.509f, 0f); Debug.Log("moved back");
                 nextAttackTime = Time.time + (1f / attackSpeed);
             }
         }
@@ -29,8 +30,8 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         //play attack animation
-        //animator.SetTrigger("Attack");
-
+        animator.SetTrigger("Attack");
+        //transform.Translate(0.437f, -0.509f, 0f); Debug.Log("moved");
         //detect the hit
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         
