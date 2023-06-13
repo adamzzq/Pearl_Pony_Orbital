@@ -365,12 +365,9 @@ GameObject:
   - component: {fileID: 8127995329648642812}
   - component: {fileID: 179012122478657134}
   - component: {fileID: 1804716826}
-  - component: {fileID: 3695895247287453066}
-  - component: {fileID: 3867774332803488008}
-  - component: {fileID: 7767614508314760613}
   - component: {fileID: 1366122236093666795}
   - component: {fileID: 3483863529365979063}
-  - component: {fileID: 6879011244155997638}
+  - component: {fileID: -6373117310281339314}
   m_Layer: 3
   m_Name: Rabbit
   m_TagString: Player
@@ -589,88 +586,6 @@ MonoBehaviour:
   controller: {fileID: 4847277362487769815}
   animator: {fileID: 995705954891642831}
   runspeed: 35
---- !u!114 &3695895247287453066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7934704498804261567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents:
-  - {fileID: 3867774332803488008}
-  - {fileID: 7767614508314760613}
-  - {fileID: 6879011244155997638}
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
---- !u!114 &3867774332803488008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7934704498804261567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8efc6b1d64977384eb3405357896c656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PositionModel:
-    SynchronizeEnabled: 1
-    TeleportEnabled: 0
-    TeleportIfDistanceGreaterThan: 3
-    InterpolateOption: 2
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 1
-    ExtrapolateOption: 0
-    ExtrapolateSpeed: 1
-    ExtrapolateIncludingRoundTripTime: 1
-    ExtrapolateNumberOfStoredPositions: 1
-  m_RotationModel:
-    SynchronizeEnabled: 0
-    InterpolateOption: 1
-    InterpolateRotateTowardsSpeed: 180
-    InterpolateLerpSpeed: 5
-  m_ScaleModel:
-    SynchronizeEnabled: 1
-    InterpolateOption: 1
-    InterpolateMoveTowardsSpeed: 3.4028235e+38
-    InterpolateLerpSpeed: 0
---- !u!114 &7767614508314760613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7934704498804261567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 1
-  ShowParameterInspector: 1
-  m_SynchronizeParameters:
-  - Type: 1
-    SynchronizeType: 2
-    Name: Speed
-  - Type: 4
-    SynchronizeType: 2
-    Name: IsJumping
-  m_SynchronizeLayers:
-  - SynchronizeType: 2
-    LayerIndex: 0
 --- !u!114 &1366122236093666795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,6 +598,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c678b72bae0a2a4aab39d0b89ac7d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   animator: {fileID: 0}
   attackPoint: {fileID: 6469673471341528477}
   enemyLayers:
@@ -706,7 +624,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   healthBar: {fileID: 3163532827539093613}
   maxHealth: 6
---- !u!114 &6879011244155997638
+--- !u!114 &-6373117310281339314
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -715,13 +633,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7934704498804261567}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e7cb724808c322458aa4d15f5035fa9, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 0
-  m_TeleportEnabled: 0
-  m_TeleportIfDistanceGreaterThan: 3
+  sceneId: 0
+  _assetId: 2999159273
+  serverOnly: 0
+  visible: 0
+  hasSpawned: 0
 --- !u!1 &7989677015916348776
 GameObject:
   m_ObjectHideFlags: 0
