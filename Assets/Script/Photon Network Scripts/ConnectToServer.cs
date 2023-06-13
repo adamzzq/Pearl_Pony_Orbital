@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
 using UnityEngine.SceneManagement;
 
-public class ConnectToServer : MonoBehaviourPunCallbacks
+public class ConnectToServer : MonoBehaviour
 {
-    void Start()
+    /*void Start()
     {
         PhotonNetwork.ConnectUsingSettings();
     }
@@ -20,5 +19,5 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
     {
         SceneManager.LoadScene("Lobby");
     }
-
+    */
 }

@@ -1,43 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
+using Mirror;
 
-public class SimpleMovement : MonoBehaviour
+
+public class SimpleMovement : NetworkBehaviour 
 {
     public float speed = 20f;
     public float jumpForce;
     public float maxDistance;
     public LayerMask layerMask;
-
+    public RectTransform HealthBar;
     private Rigidbody2D rb;
     Animator animator;
-    PhotonView view;
+
 
     void Start()
     {
+        if (!isLocalPlayer) return;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        view = GetComponent<PhotonView>();
+
     }
 
     void Update()
     {
-        if (view.IsMine)
-        {
-            // jump action
-            if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (!isLocalPlayer) return;
+        // jump action
+        if (Input.GetButtonDown("Jump") && IsGrounded())
             {
                 rb.AddForce(jumpForce * transform.up, ForceMode2D.Impulse);
                 //Debug.Log("Jumped\nbecause isGrounded is " + IsGrounded());
-            }
-        }
+            }   
     }
 
     private void FixedUpdate() 
     {
-        if (view.IsMine)
-        {
+            if (!isLocalPlayer) return;
             // horizontal move
             // alternative way
             /*float newSpeed = Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime;
@@ -50,9 +49,6 @@ public class SimpleMovement : MonoBehaviour
 
             newSpeed.y = rb.velocity.y;
             rb.velocity = newSpeed;
-            //gameObject.GetComponent<PhotonTransformViewPositionControl>().SetSynchronizedValues(newSpeed, 0f);
-            gameObject.GetComponent<PhotonTransformViewClassic>().SetSynchronizedValues(newSpeed, 0f);
-            //gameObject.GetComponent<PhotonTransformViewScaleControl>().GetNetworkScale();
 
             // update animation
             if (!IsGrounded())
@@ -66,16 +62,20 @@ public class SimpleMovement : MonoBehaviour
             animator.SetFloat("yVelocity", rb.velocity.y);
 
             Vector2 newScale = transform.localScale;
+            Vector3 HealthBarScale = HealthBar.transform.localScale;
             if (Input.GetAxis("Horizontal") < 0)
             {
                 newScale.x = -1;
+                HealthBarScale.x = -1;
             }
             else if (Input.GetAxis("Horizontal") > 0)
             {
-                newScale.x = 1;
+                newScale.x = 1;               
+                HealthBarScale.x = 1; 
             }
             transform.localScale = newScale;
-        }
+            HealthBar.transform.localScale = HealthBarScale;
+        
     }
     private void OnDrawGizmos()
     {

@@ -1,4 +1,3 @@
-using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +5,7 @@ using UnityEngine.UI;
 
 public class SpawnPlayer : MonoBehaviour
 {
-    public GameObject playerPrefab1;
+    /*public GameObject playerPrefab1;
     public GameObject playerPrefab2;
     private GameObject chosenPrefab;
     private float spawnPosOffset = 3.0f;
@@ -21,5 +20,5 @@ public class SpawnPlayer : MonoBehaviour
         }
         Vector2 spawnPos = new Vector2(transform.position.x + spawnPosOffset, transform.position.y);
         PhotonNetwork.Instantiate(chosenPrefab.name, spawnPos, Quaternion.identity);
-    }
+    }*/
 }

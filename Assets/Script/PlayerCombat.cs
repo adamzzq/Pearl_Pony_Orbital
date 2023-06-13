@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class PlayerCombat : MonoBehaviour
+public class PlayerCombat : NetworkBehaviour
 {
     public Animator animator;
 
@@ -15,6 +16,7 @@ public class PlayerCombat : MonoBehaviour
     float nextAttackTime = 0f;
     void Update()
     {
+        if (!isLocalPlayer) return;
         //regulate attack speed
         if (Time.time >= nextAttackTime)
         {

@@ -370,6 +370,7 @@ GameObject:
   - component: {fileID: 7767614508314760613}
   - component: {fileID: 1366122236093666795}
   - component: {fileID: 3483863529365979063}
+  - component: {fileID: 6879011244155997638}
   m_Layer: 3
   m_Name: Rabbit
   m_TagString: Player
@@ -609,6 +610,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 3867774332803488008}
   - {fileID: 7767614508314760613}
+  - {fileID: 6879011244155997638}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -626,7 +628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PositionModel:
     SynchronizeEnabled: 1
-    TeleportEnabled: 1
+    TeleportEnabled: 0
     TeleportIfDistanceGreaterThan: 3
     InterpolateOption: 2
     InterpolateMoveTowardsSpeed: 1
@@ -641,9 +643,9 @@ MonoBehaviour:
     InterpolateRotateTowardsSpeed: 180
     InterpolateLerpSpeed: 5
   m_ScaleModel:
-    SynchronizeEnabled: 0
-    InterpolateOption: 0
-    InterpolateMoveTowardsSpeed: 1
+    SynchronizeEnabled: 1
+    InterpolateOption: 1
+    InterpolateMoveTowardsSpeed: 3.4028235e+38
     InterpolateLerpSpeed: 0
 --- !u!114 &7767614508314760613
 MonoBehaviour:
@@ -704,6 +706,22 @@ MonoBehaviour:
   animator: {fileID: 0}
   healthBar: {fileID: 3163532827539093613}
   maxHealth: 6
+--- !u!114 &6879011244155997638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7934704498804261567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7cb724808c322458aa4d15f5035fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
 --- !u!1 &7989677015916348776
 GameObject:
   m_ObjectHideFlags: 0
