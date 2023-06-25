@@ -1,14 +1,17 @@
+using Mirror;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStats : MonoBehaviour
+public class PlayerStats : NetworkBehaviour
 {
     public Animator animator;
     public HealthBar healthBar;
 
-    public int maxHealth;
-    int currentHealth;
+    public float maxHealth;
+
+    [SyncVar]
+    public float currentHealth;
 
     void Start()
     {
@@ -16,7 +19,8 @@ public class PlayerStats : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    public void TakeDamage(int damage)
+    [Command]
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
 

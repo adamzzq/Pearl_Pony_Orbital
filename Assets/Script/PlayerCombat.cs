@@ -12,8 +12,10 @@ public class PlayerCombat : NetworkBehaviour
 
     public float attackRange = 0.5f;
     public float attackSpeed = 2f;
-    public int attackDamage = 1;
+    public float attackDamage = 1f;
     float nextAttackTime = 0f;
+
+    [ClientCallback]
     void Update()
     {
         if (!isLocalPlayer) return;

@@ -1,0 +1,372 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.1f1 (f18e0c1b5784) revision 15830540'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 14204 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\loll\Unity Hub\2022.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/Nero/Orbital/Pearl_Pony_Orbital
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+51775
+Successfully changed project path to: C:/Users/Nero/Orbital/Pearl_Pony_Orbital
+C:/Users/Nero/Orbital/Pearl_Pony_Orbital
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [7356] Host "[IP] 10.102.228.79 [Port] 0 [Flags] 2 [Guid] 4032349896 [EditorId] 4032349896 [Version] 1048832 [Id] WindowsEditor(7,NERO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [7356] Host "[IP] 10.102.228.79 [Port] 0 [Flags] 2 [Guid] 4032349896 [EditorId] 4032349896 [Version] 1048832 [Id] WindowsEditor(7,NERO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 230.02 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.1f1 (f18e0c1b5784)
+[Subsystems] Discovering subsystems at path D:/loll/Unity Hub/2022.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Nero/Orbital/Pearl_Pony_Orbital/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Vendor:   NVIDIA
+    VRAM:     6009 MB
+    Driver:   31.0.15.2799
+Initialize mono
+Mono path[0] = 'D:/loll/Unity Hub/2022.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'D:/loll/Unity Hub/2022.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/loll/Unity Hub/2022.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/loll/Unity Hub/2022.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/loll/Unity Hub/2022.3.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/loll/Unity Hub/2022.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/loll/Unity Hub/2022.3.1f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.007365 seconds.
+- Loaded All Assemblies, in  0.296 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.240 seconds
+Domain Reload Profiling: 536ms
+	BeginReloadAssembly (93ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (116ms)
+		LoadAssemblies (94ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (112ms)
+			TypeCache.Refresh (111ms)
+				TypeCache.ScanAssembly (99ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (241ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (192ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (120ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Nero\Orbital\Pearl_Pony_Orbital\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Nero\Orbital\Pearl_Pony_Orbital\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.798 seconds
+Refreshing native plugins compatible for Editor in 8.37 ms, found 4 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mirror | mirror-networking.com | discord.gg/N9QVxbM
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Mirror.Welcome:OnInitializeOnLoad () (at Assets/Mirror/Editor/Welcome.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/Mirror/Editor/Welcome.cs Line: 18)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.615 seconds
+Domain Reload Profiling: 1407ms
+	BeginReloadAssembly (131ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (587ms)
+		LoadAssemblies (348ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (307ms)
+			TypeCache.Refresh (257ms)
+				TypeCache.ScanAssembly (241ms)
+			ScanForSourceGeneratedMonoScriptInfo (43ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (616ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (461ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (105ms)
+			ProcessInitializeOnLoadAttributes (290ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 10.35 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6049 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 91 unused Assets / (141.6 KB). Loaded Objects now: 6501.
+Memory consumption went from 194.4 MB to 194.3 MB.
+Total: 5.520600 ms (FindLiveObjects: 0.472100 ms CreateObjectMapping: 0.432800 ms MarkObjects: 4.426700 ms  DeleteObjects: 0.187700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/Powerups.cs: 60ab9821bf3f719faa1a81ede64f5a7f -> 007e4e7c08bdd0902787d5c6e4cfc1eb
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/HeathBuff.cs: 9a98c712877e281f236132993ca764c8 -> 5512f2315386142d352e5459818c7488
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PowerupEffect.cs: c0d68b28f7703f7d9ec94695d2b5b525 -> 24c61aeb28a81c3b370cc84113845683
+  custom:scripting/monoscript/fileName/PlayerNameInput.cs: 79a0f858ac01ac7b14b98a9633aad607 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/NetworkManagerPOF.cs: b13b66019c9fc823682574535dc8a701 -> 
+  custom:scripting/monoscript/fileName/PowerUp.cs: f15b9ebfef18a6c65d9e3e5db527cf70 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/buff.cs: e39ff0b70d67e3ca9986ef5ec445236d -> 
+  custom:scripting/monoscript/fileName/PowerupSpawner.cs: bf21bb184b0061e544c0feaac7e6d9fd -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Titan.cs: 0f18097f3a5c09d03324734297fce2c1 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2769058.960918 seconds.
+  path: Assets/Powerups/P_Up/Transperent/Icon41.png
+  artifactKey: Guid(45bf2ca9f4e5ecf43ab3ce34e89a6d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Transperent/Icon41.png using Guid(45bf2ca9f4e5ecf43ab3ce34e89a6d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c201eea8fee78635e741f2cd4779ec') in 0.097813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Powerups/P_Up/Transperent/Icon43.png
+  artifactKey: Guid(c95e1e83391a6144fa30ec92b9916f3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Transperent/Icon43.png using Guid(c95e1e83391a6144fa30ec92b9916f3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc09b7ffecb1fa82b8a9e0270663cd7a') in 0.020022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 121.884041 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon2.png
+  artifactKey: Guid(69267597647b4a946935cc4100a433e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon2.png using Guid(69267597647b4a946935cc4100a433e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b433649549cd4a8a235525cccf6395') in 0.017410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.005852 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon6.png
+  artifactKey: Guid(ca110fbdd70865b46835b8a33343fa8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon6.png using Guid(ca110fbdd70865b46835b8a33343fa8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf5ef24bea6c8892363743239fb15257') in 0.020188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon9.png
+  artifactKey: Guid(ec61b92cc1952a84ba38b71abcd5b752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon9.png using Guid(ec61b92cc1952a84ba38b71abcd5b752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a0ba9babb2531ce540c02e748a7387e') in 0.032502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon37.png
+  artifactKey: Guid(3b4a03c8d3e67ba4eb4ee35116ecc0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon37.png using Guid(3b4a03c8d3e67ba4eb4ee35116ecc0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc326aac1f199acf4532ac63153625a') in 0.022207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon14.png
+  artifactKey: Guid(a7c1ae81913f0ad4696d62ddd613448e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon14.png using Guid(a7c1ae81913f0ad4696d62ddd613448e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6382eb1cc03929370b567b601ca248') in 0.021004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon34.png
+  artifactKey: Guid(755f796c5b690064186c1d82604fa4dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon34.png using Guid(755f796c5b690064186c1d82604fa4dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0d2eb731552e74c6d21bfd5a50a880') in 0.022385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon31.png
+  artifactKey: Guid(b98cabe3775174e45a6cdcb4014cd2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon31.png using Guid(b98cabe3775174e45a6cdcb4014cd2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811b1684089cfa16ff09d6efcc9e33af') in 0.021694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon26.png
+  artifactKey: Guid(e0090862dcddf5c44b8c3aba8b6e0cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon26.png using Guid(e0090862dcddf5c44b8c3aba8b6e0cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '730387ae6663a191696683032222719a') in 0.021164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon22.png
+  artifactKey: Guid(e7f4a23d349486c4ba5dc8153b77f941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon22.png using Guid(e7f4a23d349486c4ba5dc8153b77f941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0efb239657f6c775079865c44f7932ab') in 0.023527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon27.png
+  artifactKey: Guid(699d1ddec55ca4f438148d5e04969f3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon27.png using Guid(699d1ddec55ca4f438148d5e04969f3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af27642f8cdf59bbfa8793de85e1cee2') in 0.021346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon10.png
+  artifactKey: Guid(b2ebf0819340c874e912a7bcdad63d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon10.png using Guid(b2ebf0819340c874e912a7bcdad63d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20364ac9ac02972d068ed1a4be95493c') in 0.020353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon16.png
+  artifactKey: Guid(e39ba32f00501144a9f6cb240f9dd78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon16.png using Guid(e39ba32f00501144a9f6cb240f9dd78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2667bf4892fd229120929459d9d8c976') in 0.014638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon3.png
+  artifactKey: Guid(46120e17674ef194a948415a13113c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon3.png using Guid(46120e17674ef194a948415a13113c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75ff5995cbe66864eb01cb7c639eefd1') in 0.019200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon11.png
+  artifactKey: Guid(082b8bbe64e5209439988570256b7813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon11.png using Guid(082b8bbe64e5209439988570256b7813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '678df763199eb60733b3d8cffe2ba764') in 0.018471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon30.png
+  artifactKey: Guid(5791e930672491f459a79298a1d70cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon30.png using Guid(5791e930672491f459a79298a1d70cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ffdf608ff03a5fee6d4cbecbc5e5d34') in 0.017513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon15.png
+  artifactKey: Guid(4fbf681ecf2eb7c48bc96e1de7641e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon15.png using Guid(4fbf681ecf2eb7c48bc96e1de7641e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b72eab6ae8be66803580c80a71c5fd7') in 0.019682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon13.png
+  artifactKey: Guid(831ebfbe815db0144b9e6d880cb3b100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon13.png using Guid(831ebfbe815db0144b9e6d880cb3b100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8cc5d169025041cec66bf2727dbac23') in 0.023375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Powerups/P_Up/Background/Icon33.png
+  artifactKey: Guid(caa1aefa38ebebe479e60d73d0e2fb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Powerups/P_Up/Background/Icon33.png using Guid(caa1aefa38ebebe479e60d73d0e2fb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61bc80096d830828984aaa5215ee6599') in 0.022447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
