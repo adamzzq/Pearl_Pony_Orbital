@@ -65,13 +65,13 @@ public class SimpleMovement : NetworkBehaviour
             Vector3 HealthBarScale = HealthBar.transform.localScale;
             if (Input.GetAxis("Horizontal") < 0)
             {
-                newScale.x = -1;
-                HealthBarScale.x = -1;
+               newScale.x = -1;
+               HealthBarScale.x = -1;
             }
             else if (Input.GetAxis("Horizontal") > 0)
             {
-                newScale.x = 1;               
-                HealthBarScale.x = 1; 
+               newScale.x = 1;               
+               HealthBarScale.x = 1; 
             }
             transform.localScale = newScale;
             HealthBar.transform.localScale = HealthBarScale;
