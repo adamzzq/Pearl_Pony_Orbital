@@ -34,6 +34,7 @@ public class PlayerStats : NetworkBehaviour
         }
     }
 
+    [Command(requiresAuthority = false)]
     void Die()
     {
         //play dead animation
