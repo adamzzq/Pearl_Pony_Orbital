@@ -15,13 +15,18 @@ public class RandomSpawner : NetworkBehaviour
     [Header("Randomise Setting")]
     public bool isRandom;
     public List<GameObject> spawnPoints = new List<GameObject>();
+
+    [Server]
     void Start()
     {
+        if (!isServer) { return; }
         currentTimeToSpawn = timeToSpawn;
     }
 
+    [Server]
     void Update()
     {
+        if(!isServer) { return; }
         UpdateTimer();
     }
 
@@ -37,8 +42,8 @@ public class RandomSpawner : NetworkBehaviour
             currentTimeToSpawn = timeToSpawn;
         }
     }
-    
-    [Server]
+
+    //[ClientRpc]
     public void SpawnObject()
     {
         int index = isRandom ? Random.Range(0, objectToSpawn.Count) : 0;

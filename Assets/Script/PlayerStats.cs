@@ -19,7 +19,7 @@ public class PlayerStats : NetworkBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    [Command]
+    [Command(requiresAuthority = false)]
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
