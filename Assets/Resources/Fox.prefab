@@ -162,6 +162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e7f1b7e17d2c846a1634a7de455d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   firePoint: {fileID: 1600454780163468573}
   bullet: {fileID: 3637470973674472071, guid: ecd5a20b893676c48868ff10961d6fd9, type: 3}
   shootSpeed: 4
@@ -272,8 +275,8 @@ GameObject:
   - component: {fileID: 1837152966879358284}
   - component: {fileID: 1837152966879358275}
   - component: {fileID: 6693367268380095134}
+  - component: {fileID: 1486321859448494196}
   - component: {fileID: 3745587366831507535}
-  - component: {fileID: -7200775738796601706}
   - component: {fileID: 2024595875535101673}
   - component: {fileID: 745260658713439325}
   - component: {fileID: 5483762682383979468}
@@ -489,6 +492,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1486321859448494196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837152966879358272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3bd2cc0751d57543adb375744b82603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  localCamera: {fileID: 0}
 --- !u!114 &3745587366831507535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,30 +523,6 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
-  speed: 9
-  jumpForce: 22
-  maxDistance: 1.24
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 512
-  HealthBar: {fileID: 6887320383880723248}
---- !u!114 &-7200775738796601706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837152966879358272}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 657a7b265efb23b42b96c6e691c30482, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  animator: {fileID: 0}
-  networkAnimator: {fileID: 0}
   speed: 9
   jumpForce: 22
   maxDistance: 1.24
@@ -570,6 +565,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a1a93ded231144a8708c1245fb1840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   animator: {fileID: 0}
   healthBar: {fileID: 8880618828447871593}
   maxHealth: 6
@@ -598,7 +596,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837152966879358272}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
@@ -727,6 +725,37 @@ MonoBehaviour:
   positionSensitivity: 0.01
   rotationSensitivity: 0.01
   scaleSensitivity: 0.01
+--- !u!1 &3907958535158431742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2694763269936761608}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2694763269936761608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3907958535158431742}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.06, y: -0.128, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9135509006961241556}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4999482408692482435
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,7 +862,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5926574800991653346}
+  - {fileID: 2694763269936761608}
   m_Father: {fileID: 1298824796266575769}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -901,40 +930,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e7f1b7e17d2c846a1634a7de455d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 5926574800991653346}
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  firePoint: {fileID: 2694763269936761608}
   bullet: {fileID: 3637470973674472071, guid: 5c56cf83ce534954397afc91d44149eb, type: 3}
   shootSpeed: 4
---- !u!1 &7988022876530214668
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5926574800991653346}
-  m_Layer: 0
-  m_Name: FirePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5926574800991653346
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7988022876530214668}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: -0.128, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9135509006961241556}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8593030517439639043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,6 +1040,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d807a1f9ad41b51428b2f2504d1686b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   slider: {fileID: 8370754892573915401}
   gradient:
     serializedVersion: 2

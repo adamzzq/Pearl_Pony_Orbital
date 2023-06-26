@@ -99,7 +99,22 @@ namespace Mirror
         [FormerlySerializedAs("m_PlayerPrefab")]
         [Tooltip("Prefab of the player object. Prefab must have a Network Identity component. May be an empty game object or a full avatar.")]
         public GameObject playerPrefab;
-
+        public bool isFox = true;
+        public void selectFox()
+        {
+            isFox = true;
+        }
+        public void selectRabbit()
+        {
+            isFox |= false;
+        }
+        public void setPlayer()
+        {
+            if (!isFox)
+            {
+                playerPrefab = Resources.Load<GameObject>("Rabbit");
+            }           
+        }
         /// <summary>Enable to automatically create player objects on connect and on scene change.</summary>
         [FormerlySerializedAs("m_AutoCreatePlayer")]
         [Tooltip("Should Mirror automatically spawn the player after scene change?")]

@@ -25,4 +25,13 @@ public class HostConnect : MonoBehaviour
         manager.StartClient();
         HostConnect_go.SetActive(false);
     }
+    public void DisconnectHost()
+    {
+        manager.StopHost();
+    }
+
+    public void DisconnectClient()
+    {
+        manager.StopClient();
+    }
 }
