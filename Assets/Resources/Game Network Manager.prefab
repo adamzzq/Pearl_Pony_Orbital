@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1180423364062259218
 MonoBehaviour:
@@ -60,7 +60,11 @@ MonoBehaviour:
   playerPrefab: {fileID: 1837152966879358272, guid: b496788856d000940bde2b56c6522dc0, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
-  spawnPrefabs: []
+  spawnPrefabs:
+  - {fileID: 1226010427259625105, guid: b639de681b7efd542ba63eb2b57b5125, type: 3}
+  - {fileID: 2706996630791799706, guid: e9cbd09e8057e924a8f0f2f7fcbaa941, type: 3}
+  - {fileID: 6522440289635188374, guid: c02c6285722941d48a9f4c5d133aff0c, type: 3}
+  - {fileID: 2048416105645271052, guid: 03520600e0505c945b189cfcfe05447e, type: 3}
   snapshotSettings:
     bufferTimeMultiplier: 2
     catchupNegativeThreshold: -1
