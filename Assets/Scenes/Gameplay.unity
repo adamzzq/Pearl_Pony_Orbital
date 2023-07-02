@@ -478,7 +478,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420033}
   - component: {fileID: 519420034}
   - component: {fileID: 519420035}
   m_Layer: 0
@@ -568,22 +567,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2.772072, y: 0.44975275}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16409005060a1714fa7e4a4ad23eccf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minX: -14.95
-  minY: 1.3
-  maxX: 16.3
-  maxY: 3.75
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,8 +665,6 @@ MonoBehaviour:
   maxConnections: 100
   authenticator: {fileID: 0}
   playerPrefab: {fileID: 1837152966879358272, guid: b496788856d000940bde2b56c6522dc0, type: 3}
-  playerPrefab2: {fileID: 7934704498804261567, guid: d2e5fcdd3d95c964ea15b4f74b5df65e, type: 3}
-  isFox: 1
   autoCreatePlayer: 0
   playerSpawnMethod: 0
   spawnPrefabs:
@@ -1454,7 +1435,7 @@ PrefabInstance:
     - target: {fileID: 6980910901732872808, guid: 35c4daac204d8884ea769be56cdcbb4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3745587366831507535, guid: b496788856d000940bde2b56c6522dc0, type: 3}
+      objectReference: {fileID: 8086203583850441149, guid: b496788856d000940bde2b56c6522dc0, type: 3}
     - target: {fileID: 6980910901732872808, guid: 35c4daac204d8884ea769be56cdcbb4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -1514,7 +1495,7 @@ PrefabInstance:
     - target: {fileID: 7280984554265047736, guid: 35c4daac204d8884ea769be56cdcbb4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 3745587366831507535, guid: b496788856d000940bde2b56c6522dc0, type: 3}
+      objectReference: {fileID: 8086203583850441149, guid: b496788856d000940bde2b56c6522dc0, type: 3}
     - target: {fileID: 7280984554265047736, guid: 35c4daac204d8884ea769be56cdcbb4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 0
@@ -1676,7 +1657,8 @@ PrefabInstance:
       value: Lobby Panel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7581633278985475885, guid: 35c4daac204d8884ea769be56cdcbb4f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35c4daac204d8884ea769be56cdcbb4f, type: 3}
@@ -7209,7 +7191,7 @@ PrefabInstance:
     - target: {fileID: 1180423364062259218, guid: 559bdf8e0b7be3a40bb3493c687b93c8, type: 3}
       propertyPath: playerPrefab
       value: 
-      objectReference: {fileID: 1837152966879358272, guid: b496788856d000940bde2b56c6522dc0, type: 3}
+      objectReference: {fileID: 2187846880106231020, guid: b496788856d000940bde2b56c6522dc0, type: 3}
     - target: {fileID: 1180423364062259218, guid: 559bdf8e0b7be3a40bb3493c687b93c8, type: 3}
       propertyPath: playerPrefab2
       value: 
@@ -7224,7 +7206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1180423364062259218, guid: 559bdf8e0b7be3a40bb3493c687b93c8, type: 3}
       propertyPath: spawnPrefabs.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1180423364062259218, guid: 559bdf8e0b7be3a40bb3493c687b93c8, type: 3}
       propertyPath: spawnPrefabs.Array.data[0]
@@ -7245,11 +7227,11 @@ PrefabInstance:
     - target: {fileID: 1180423364062259218, guid: 559bdf8e0b7be3a40bb3493c687b93c8, type: 3}
       propertyPath: spawnPrefabs.Array.data[4]
       value: 
-      objectReference: {fileID: 7934704498804261567, guid: d2e5fcdd3d95c964ea15b4f74b5df65e, type: 3}
+      objectReference: {fileID: 2106591336241059490, guid: ecd5a20b893676c48868ff10961d6fd9, type: 3}
     - target: {fileID: 1180423364062259218, guid: 559bdf8e0b7be3a40bb3493c687b93c8, type: 3}
       propertyPath: spawnPrefabs.Array.data[5]
       value: 
-      objectReference: {fileID: 1837152966879358272, guid: b496788856d000940bde2b56c6522dc0, type: 3}
+      objectReference: {fileID: 3637470973674472071, guid: 5c56cf83ce534954397afc91d44149eb, type: 3}
     - target: {fileID: 1529424710577413061, guid: 559bdf8e0b7be3a40bb3493c687b93c8, type: 3}
       propertyPath: ip_InputField
       value: 

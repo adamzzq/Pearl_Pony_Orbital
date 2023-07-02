@@ -16,14 +16,14 @@ public class RandomSpawner : NetworkBehaviour
     public bool isRandom;
     public List<GameObject> spawnPoints = new List<GameObject>();
 
-    [Server]
+    [ServerCallback]
     void Start()
     {
         if (!isServer) { return; }
         currentTimeToSpawn = timeToSpawn;
     }
 
-    [Server]
+    [ServerCallback]
     void Update()
     {
         if(!isServer) { return; }
