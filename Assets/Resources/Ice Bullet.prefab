@@ -163,9 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99b3ba3043f43284f987d2f6f4f58a7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
   damage: 1
-  rb: {fileID: 7986276921463343894}
 --- !u!114 &3632228082769886840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,17 +193,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff3ba0becae47b8b9381191598957c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  syncDirection: 0
+  syncDirection: 1
   syncMode: 0
   syncInterval: 0
   target: {fileID: 9105910946425063310}
   clientAuthority: 0
   syncPosition: 1
-  syncRotation: 1
+  syncRotation: 0
   syncScale: 0
   interpolatePosition: 1
-  interpolateRotation: 1
-  interpolateScale: 1
+  interpolateRotation: 0
+  interpolateScale: 0
   sendIntervalMultiplier: 1
   timelineOffset: 0
   showGizmos: 0

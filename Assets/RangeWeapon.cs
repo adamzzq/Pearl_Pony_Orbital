@@ -10,8 +10,8 @@ public class RangeWeapon : NetworkBehaviour
     public GameObject bullet;
     public float shootSpeed;
     float nextShootTime;
+    private float bulletSpeed = 20f;
 
-    [ClientCallback]
     private void Update()
     {
         if (isLocalPlayer && Input.GetKeyDown(KeyCode.J))
@@ -28,6 +28,7 @@ public class RangeWeapon : NetworkBehaviour
     void shoot()
     {
         GameObject projectile = Instantiate(bullet, firePoint.position, firePoint.rotation);
+        projectile.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.root.localScale.x, 0) * bulletSpeed;
         NetworkServer.Spawn(projectile);
     }
 }

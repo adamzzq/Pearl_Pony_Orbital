@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
-
+using UnityEngine.UI;
 
 public class SimpleMovement : NetworkBehaviour 
 {
@@ -14,8 +14,11 @@ public class SimpleMovement : NetworkBehaviour
     private Rigidbody2D rb;
     Animator animator;
     public bool isRabbit;
-    public void SetRabbit() { isRabbit = true; }
-    public void SetFox() { isRabbit = false; }
+    public bool faceRight;
+
+    public void SetRabbit() { isRabbit = true; Debug.Log("set Rabbit"); }
+    public void SetFox() { isRabbit = false; Debug.Log("set Fox"); }
+
     void Start()
     {
         if (!isLocalPlayer) { return; }
@@ -23,11 +26,11 @@ public class SimpleMovement : NetworkBehaviour
         animator = GetComponent<Animator>();
         if (isRabbit)
         {
-            animator.SetBool("isRabbit", true);
+            animator.SetBool("isRabbit", true); Debug.Log("Rabbit Animator select");
         }
         else
         {
-            animator.SetBool("isRabbit", false);
+            animator.SetBool("isRabbit", false); Debug.Log("Fox Animator select");
         }
     }
 
@@ -42,47 +45,49 @@ public class SimpleMovement : NetworkBehaviour
             }   
     }
 
-    private void FixedUpdate() 
+    public void FixedUpdate() 
     {
         if (!isLocalPlayer) { return; }
-            // horizontal move
-            // alternative way
-            /*float newSpeed = Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime;
-            animator.SetFloat("Speed", Mathf.Abs(newSpeed));
-            transform.Translate(newSpeed, 0f, 0f);*/
-            Vector2 newSpeed;
+        // horizontal move
+        // alternative way
+        /*float newSpeed = Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime;
+        animator.SetFloat("Speed", Mathf.Abs(newSpeed));
+        transform.Translate(newSpeed, 0f, 0f);*/
+        Vector2 newSpeed;
 
-            newSpeed.x = Input.GetAxisRaw("Horizontal") * speed; //Debug.Log(newSpeed.x);
-            animator.SetFloat("Speed", Mathf.Abs(newSpeed.x));
+        newSpeed.x = Input.GetAxisRaw("Horizontal") * speed; //Debug.Log(newSpeed.x);
+        animator.SetFloat("Speed", Mathf.Abs(newSpeed.x));
 
-            newSpeed.y = rb.velocity.y;
-            rb.velocity = newSpeed;
+        newSpeed.y = rb.velocity.y;
+        rb.velocity = newSpeed;
 
-            // update animation
-            if (!IsGrounded())
-            {
-                animator.SetBool("IsJumping", true);
-            }
-            else
-            {
-                animator.SetBool("IsJumping", false);
-            }
-            animator.SetFloat("yVelocity", rb.velocity.y);
+        // update animation
+        if (!IsGrounded())
+        {
+            animator.SetBool("IsJumping", true);
+        }
+        else
+        {
+            animator.SetBool("IsJumping", false);
+        }
+        animator.SetFloat("yVelocity", rb.velocity.y);
 
-            Vector2 newScale = transform.localScale;
-            Vector3 HealthBarScale = HealthBar.transform.localScale;
-            if (Input.GetAxis("Horizontal") < 0)
-            {
-               newScale.x = -1;
-               HealthBarScale.x = -1;
-            }
-            else if (Input.GetAxis("Horizontal") > 0)
-            {
-               newScale.x = 1;               
-               HealthBarScale.x = 1; 
-            }
-            transform.localScale = newScale;
-            HealthBar.transform.localScale = HealthBarScale;
+        Vector2 newScale = transform.localScale;
+        Vector3 HealthBarScale = HealthBar.transform.localScale;
+        if (Input.GetAxis("Horizontal") < 0) // facing left
+        {
+            newScale.x = -1;
+            HealthBarScale.x = -1;
+            faceRight = false;
+        }
+        else if (Input.GetAxis("Horizontal") > 0) // facing right
+        {
+            newScale.x = 1;               
+            HealthBarScale.x = 1;
+            faceRight = true;
+        }
+        transform.localScale = newScale;
+        HealthBar.transform.localScale = HealthBarScale;
         
     }
     private void OnDrawGizmos()
