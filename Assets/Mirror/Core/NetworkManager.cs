@@ -99,22 +99,7 @@ namespace Mirror
         [FormerlySerializedAs("m_PlayerPrefab")]
         [Tooltip("Prefab of the player object. Prefab must have a Network Identity component. May be an empty game object or a full avatar.")]
         public GameObject playerPrefab;
-        public bool isFox = true;
-        public void selectFox()
-        {
-            isFox = true;
-        }
-        public void selectRabbit()
-        {
-            isFox |= false;
-        }
-        public void setPlayer()
-        {
-            if (!isFox)
-            {
-                playerPrefab = Resources.Load<GameObject>("Rabbit");
-            }           
-        }
+
         /// <summary>Enable to automatically create player objects on connect and on scene change.</summary>
         [FormerlySerializedAs("m_AutoCreatePlayer")]
         [Tooltip("Should Mirror automatically spawn the player after scene change?")]
@@ -1330,6 +1315,22 @@ namespace Mirror
             GameObject player = startPos != null
                 ? Instantiate(playerPrefab, startPos.position, startPos.rotation)
                 : Instantiate(playerPrefab);
+
+            // my own implementation starts here
+            /*if (startPos != null) 
+            { 
+                GameObject player = isFox ? Instantiate(playerPrefab, startPos.position, startPos.rotation) :
+                Instantiate(playerPrefab2, startPos.position, startPos.rotation); Debug.Log("isFox:" + isFox);
+                player.name = $"{playerPrefab.name} [connId={conn.connectionId}]";
+                NetworkServer.AddPlayerForConnection(conn, player);
+            }
+            else
+            {
+                GameObject player = isFox ? Instantiate(playerPrefab) : Instantiate(playerPrefab2);
+                player.name = $"{playerPrefab.name} [connId={conn.connectionId}]"; Debug.Log("isFox:" + isFox);
+                NetworkServer.AddPlayerForConnection(conn, player);
+            }*/
+            // my own implementation ends here
 
             // instantiating a "Player" prefab gives it the name "Player(clone)"
             // => appending the connectionId is WAY more useful for debugging!

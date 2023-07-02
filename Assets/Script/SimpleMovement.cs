@@ -13,19 +13,27 @@ public class SimpleMovement : NetworkBehaviour
     public RectTransform HealthBar;
     private Rigidbody2D rb;
     Animator animator;
-
-
+    public bool isRabbit;
+    public void SetRabbit() { isRabbit = true; }
+    public void SetFox() { isRabbit = false; }
     void Start()
     {
-        if (!isLocalPlayer) return;
+        if (!isLocalPlayer) { return; }
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
+        if (isRabbit)
+        {
+            animator.SetBool("isRabbit", true);
+        }
+        else
+        {
+            animator.SetBool("isRabbit", false);
+        }
     }
 
     void Update()
     {
-        if (!isLocalPlayer) return;
+        if (!isLocalPlayer) { return; }
         // jump action
         if (Input.GetButtonDown("Jump") && IsGrounded())
             {
@@ -36,7 +44,7 @@ public class SimpleMovement : NetworkBehaviour
 
     private void FixedUpdate() 
     {
-            if (!isLocalPlayer) return;
+        if (!isLocalPlayer) { return; }
             // horizontal move
             // alternative way
             /*float newSpeed = Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime;
