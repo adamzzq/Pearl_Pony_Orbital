@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SpeedBuff : MonoBehaviour
 {
-    //public GameObject pickupEffect;
+    
+    public AudioSource pickupSound;
     public float multiplier;
     public float duration;
     private void OnTriggerEnter2D(Collider2D other)
@@ -20,6 +21,7 @@ public class SpeedBuff : MonoBehaviour
 
         //apply pickup effect
         //Instantiate(pickupEffect, transform.position, transform.rotation);
+        pickupSound.Play();
 
         //apply speed buff
         SimpleMovement stats= player.GetComponent<SimpleMovement>();

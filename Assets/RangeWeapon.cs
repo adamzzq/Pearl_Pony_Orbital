@@ -12,6 +12,8 @@ public class RangeWeapon : NetworkBehaviour
     float nextShootTime;
     private float bulletSpeed = 20f;
 
+    public AudioSource shootingSound;
+
     private void Update()
     {
         if (isLocalPlayer && Input.GetKeyDown(KeyCode.J))
@@ -19,12 +21,13 @@ public class RangeWeapon : NetworkBehaviour
             if (Time.time > nextShootTime) 
             {
                 nextShootTime = Time.time + (1 / shootSpeed);
+                shootingSound.Play();
                 shoot();
             }
         }
     }
 
-    [Command]
+    [ClientCallback]
     void shoot()
     {
         GameObject projectile = Instantiate(bullet, firePoint.position, firePoint.rotation);

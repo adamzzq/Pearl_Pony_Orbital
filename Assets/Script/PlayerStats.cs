@@ -7,6 +7,7 @@ public class PlayerStats : NetworkBehaviour
 {
     public Animator animator;
     public HealthBar healthBar;
+    public AudioSource deathSound;
 
     public float maxHealth;
 
@@ -37,7 +38,9 @@ public class PlayerStats : NetworkBehaviour
     [Command(requiresAuthority = false)]
     void Die()
     {
+        deathSound.Play();
         //play dead animation
+        GetComponent<SpriteRenderer>().enabled = false;
         Debug.Log("GG");
 
         //disable

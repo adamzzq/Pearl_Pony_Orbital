@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TitanBuff : MonoBehaviour
 {
-    //public GameObject pickupEffect;
+    public AudioSource pickupSound;
     public float multiplier;
     public float duration;
 
@@ -20,7 +20,7 @@ public class TitanBuff : MonoBehaviour
     {
         //apply pickup effect
         //Instantiate(pickupEffect, transform.position, transform.rotation);
-
+        pickupSound.Play();
         //apply titan buff
         PlayerCombat dmg = player.GetComponent<PlayerCombat>();
         SpriteRenderer color = player.GetComponent<SpriteRenderer>();

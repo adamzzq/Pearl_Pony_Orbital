@@ -16,6 +16,9 @@ public class SimpleMovement : NetworkBehaviour
     public bool isRabbit;
     public bool faceRight;
 
+    public AudioSource jumpSound;
+    public AudioSource moveSound;
+
     public void SetRabbit() { isRabbit = true; Debug.Log("set Rabbit"); }
     public void SetFox() { isRabbit = false; Debug.Log("set Fox"); }
 
@@ -40,6 +43,7 @@ public class SimpleMovement : NetworkBehaviour
         // jump action
         if (Input.GetButtonDown("Jump") && IsGrounded())
             {
+                jumpSound.Play();
                 rb.AddForce(jumpForce * transform.up, ForceMode2D.Impulse);
                 //Debug.Log("Jumped\nbecause isGrounded is " + IsGrounded());
             }   
@@ -53,6 +57,11 @@ public class SimpleMovement : NetworkBehaviour
         /*float newSpeed = Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime;
         animator.SetFloat("Speed", Mathf.Abs(newSpeed));
         transform.Translate(newSpeed, 0f, 0f);*/
+        if (Input.GetButtonDown("Horizontal") && IsGrounded())
+        {
+            moveSound.Play();
+        }
+
         Vector2 newSpeed;
 
         newSpeed.x = Input.GetAxisRaw("Horizontal") * speed; //Debug.Log(newSpeed.x);

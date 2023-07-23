@@ -15,6 +15,8 @@ public class PlayerCombat : NetworkBehaviour
     public float attackDamage = 1f;
     float nextAttackTime = 0f;
 
+    public AudioSource attackSound;
+
     [ClientCallback]
     void Update()
     {
@@ -24,6 +26,7 @@ public class PlayerCombat : NetworkBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                attackSound.Play();
                 Attack();
                 //transform.Translate(-0.437f, 0.509f, 0f); Debug.Log("moved back");
                 nextAttackTime = Time.time + (1f / attackSpeed);
