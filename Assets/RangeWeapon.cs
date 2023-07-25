@@ -16,7 +16,7 @@ public class RangeWeapon : NetworkBehaviour
 
     private void Update()
     {
-        if (isLocalPlayer && Input.GetKeyDown(KeyCode.J))
+        if (isLocalPlayer && Input.GetKeyDown(KeyCode.Space))
         {
             if (Time.time > nextShootTime) 
             {
@@ -27,7 +27,7 @@ public class RangeWeapon : NetworkBehaviour
         }
     }
 
-    [ClientCallback]
+    [Command]
     void shoot()
     {
         GameObject projectile = Instantiate(bullet, firePoint.position, firePoint.rotation);
