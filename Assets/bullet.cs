@@ -5,14 +5,13 @@ using Mirror;
 
 public class bullet : NetworkBehaviour
 {
-    public int damage = 1;
+    public float bulletDamage = 1f;
 
-    private void OnTriggerEnter2D(Collider2D hitInfo)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        PlayerStats enemy = GetComponent<PlayerStats>();
-        if (enemy != null)
+        if (other.gameObject.tag == "Player")
         {
-            enemy.TakeDamage(damage);
+            other.gameObject.GetComponent<PlayerStats>().TakeDamage(bulletDamage);
         }
         Destroy(gameObject);
     }
