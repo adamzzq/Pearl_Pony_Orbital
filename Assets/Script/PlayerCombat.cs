@@ -46,6 +46,7 @@ public class PlayerCombat : NetworkBehaviour
         foreach (Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<PlayerStats>().TakeDamage(attackDamage);
+            enemy.GetComponent<PlayerStats>().HurtAnimation();
         }
 
     }
