@@ -24,7 +24,7 @@ public class PlayerCombat : NetworkBehaviour
         //regulate attack speed
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.J))
             {
                 attackSound.Play();
                 Attack();

@@ -40,6 +40,7 @@ public class PlayerStats : NetworkBehaviour
     {
         deathSound.Play();
         //play dead animation
+        animator.SetBool("isDead", true);
         GetComponent<SpriteRenderer>().enabled = false;
         Debug.Log("GG");
 

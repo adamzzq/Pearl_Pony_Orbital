@@ -1666,7 +1666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9187280037845567068, guid: 35c4daac204d8884ea769be56cdcbb4f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -7293,6 +7293,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 4203372244538727610, guid: 3349d66a348a1394f8db85fb003edabd, type: 3}
+      propertyPath: totalTime
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 6223603315327010876, guid: 3349d66a348a1394f8db85fb003edabd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
