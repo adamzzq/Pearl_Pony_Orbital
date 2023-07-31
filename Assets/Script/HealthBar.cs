@@ -19,7 +19,8 @@ public class HealthBar : NetworkBehaviour
         fill.color = gradient.Evaluate(1f);
     }
 
-    [ClientRpc]
+    //[Command(requiresAuthority = false)]
+    //[ClientRpc]
     public void SetHealth(float health)
     {
         if (health > slider.maxValue)
