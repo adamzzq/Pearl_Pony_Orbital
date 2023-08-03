@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("Quit"); //check the functionality of the button
+        //Debug.Log("Quit"); //check the functionality of the button
         Application.Quit();
     }
    

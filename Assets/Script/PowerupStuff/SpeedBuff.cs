@@ -18,7 +18,6 @@ public class SpeedBuff : MonoBehaviour
 
     IEnumerator Pickup(Collider2D player)
     {
-
         //apply pickup effect
         //Instantiate(pickupEffect, transform.position, transform.rotation);
         pickupSound.Play();
