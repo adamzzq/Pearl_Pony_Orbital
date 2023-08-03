@@ -33,8 +33,10 @@ public class ScoreManager : NetworkBehaviour
         player1ScoreText.text = "PLAYER 1: " + player1Score.ToString();
         AuxPlayer1AddPoint();
     }
+
     [ClientRpc]
     public void AuxPlayer1AddPoint() { player1ScoreText.text = "PLAYER 1: " + player1Score.ToString(); }
+
     //[Command(requiresAuthority = false)]
     [ClientRpc]
     public void Player2AddPoint()

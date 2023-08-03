@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class Timer : NetworkBehaviour
 {
@@ -11,26 +12,38 @@ public class Timer : NetworkBehaviour
 
     public WinnerDecider winnerDecider;
     public GameOverScreen gameOverScreen;
-    public AudioSource gameoverSound;
+    
+    private SoundManager gameSoundManager;
+    // flags in Update() to prevent multiple calls to play music
+    private bool canPlayMusic = true; 
+    private bool canPlayDrum = true;
 
     [SyncVar]
     public float totalTime = 90;
-
-    void Update()
+    
+    private void Start()
     {
-        if (totalTime > 0)
+        gameSoundManager = SoundManager.Instance;
+    }
+
+    private void Update()
+    {
+        totalTime -= Time.deltaTime;
+        
+        if ((int)totalTime <= 9 && (int)totalTime >= 0 && canPlayDrum)
         {
-            totalTime -= Time.deltaTime;
+            canPlayDrum = gameSoundManager.DrumSound();
         }
-        else
+        else if ((int)totalTime < 0 && canPlayMusic)
         {
             totalTime = 0;
-            gameoverSound.Play();
             winnerDecider.decide();
             gameOverScreen.Setup();
+            canPlayMusic = gameSoundManager.GameOverSound();
+            SoundManager.Instance.GameOver = true; // trigger Destroy(gameObject) in PlayerStats
         }
 
-        DisplayTime(totalTime); 
+        DisplayTime(totalTime);
     }
 
     [ClientCallback]

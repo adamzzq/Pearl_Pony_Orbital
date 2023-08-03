@@ -105,15 +105,21 @@ public class PlayerStats : NetworkBehaviour
 
     private void playerSwitch(bool status)
     {
-        /*GetComponent<BoxCollider2D>().enabled = status;
+        GetComponent<BoxCollider2D>().enabled = status;
         GetComponent<CircleCollider2D>().enabled = status;
-        this.enabled = status;*/
         playerSprite.enabled = status;
         spirit.GetComponent<SpriteRenderer>().enabled = status;
         healthbarRect.SetActive(status);
+        //gameObject.SetActive(status); Debug.Log($"gameobj set as {status}");
     }
-    /*
-    void selfKill()
+    private void Update()
+    {
+        if (SoundManager.Instance.GameOver)
+        {
+            Destroy(gameObject);
+        }
+    }
+    /*void selfKill()
     {
         currentHealth = 0f;
         healthBar.SetHealth(currentHealth);
