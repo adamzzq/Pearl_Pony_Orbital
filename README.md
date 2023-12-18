@@ -65,7 +65,15 @@ So, if you're an animal lover looking for a fresh and exciting gaming experience
  * Unity
  * C#
  * Visual Studio
- ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
+ * - C#:
+  ![C#](https://img.shields.io/badge/-C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
+
+- Unity Game Engine:
+  ![Unity](https://img.shields.io/badge/-Unity-000000?style=flat-square&logo=unity&logoColor=white)
+
+- Visual Studio:
+  ![Visual Studio](https://img.shields.io/badge/-Visual%20Studio-5C2D91?style=flat-square&logo=visual-studio&logoColor=white)
+ - ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
  * PhotonEngiene
 
 ## Acknowledgement
