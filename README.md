@@ -1,4 +1,4 @@
-#Paws_of_Fury
+# Paws_of_Fury
 AY 22/23 special term Orbital Gemini project by team Pearl Pony
 
 ## Introduction
