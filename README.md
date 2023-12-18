@@ -1,5 +1,5 @@
 # Pearl_Pony_Orbital
-22/23 special term Orbital Apollo 11 project by team Pearl Pony
+22/23 special term Orbital Gemini project by team Pearl Pony
 
 ## Introduction
 Get ready to unleash your inner animal with Paws of Fury, the ultimate third-person multiplayer fighting game!\
