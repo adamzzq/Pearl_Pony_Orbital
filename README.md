@@ -66,7 +66,7 @@ So, if you're an animal lover looking for a fresh and exciting gaming experience
  - ![Unity](https://img.shields.io/badge/-Unity-000000?style=flat-square&logo=unity&logoColor=white)
  - ![Visual Studio](https://img.shields.io/badge/-Visual%20Studio-5C2D91?style=flat-square&logo=visual-studio&logoColor=white)
  - ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
- * PhotonEngiene
+ * Photon Engine 
 
 ## Acknowledgement
 * [Sunny Land](https://assetstore.unity.com/packages/2d/characters/sunny-land-103349) by [Ansimuz](https://assetstore.unity.com/publishers/18720)
